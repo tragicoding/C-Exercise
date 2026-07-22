@@ -4,12 +4,17 @@ using namespace std;
 
 int main()
 {
-    int sum = 0;
 
-    for (int i = 1; i < 11; i++)
+    int count = 0;
+
+    for (int i = 0; i<10; i++)
     {
-        sum +=i;
+        if (i == 6) {break;}
+        if (i % 2 ==0){continue;}
+        count++;
     }
-    cout << sum;
+
+    cout << "total loop: " << count << endl;
+
     return 0;
 }
